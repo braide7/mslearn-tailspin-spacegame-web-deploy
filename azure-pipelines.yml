@@ -4,7 +4,6 @@ trigger:
 variables:
   buildConfiguration: 'Release'
 
-
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'
@@ -18,7 +17,7 @@ stages:
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '8.x'
+      dotnetSdkVersion: '6.x'
 
     steps:
     - task: UseDotNet@2
